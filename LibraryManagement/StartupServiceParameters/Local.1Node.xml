@@ -17,5 +17,8 @@
     <Parameter Name="LibraryManagement.BookCatalog_PartitionCount" Value="1" />
     <Parameter Name="LibraryManagement.BookCatalog_MinReplicaSetSize" Value="1" />
     <Parameter Name="LibraryManagement.BookCatalog_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="AppuserActorService_PartitionCount" Value="1" />
+    <Parameter Name="AppuserActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="AppuserActorService_MinReplicaSetSize" Value="1" />
   </Parameters>
 </StartupServices>

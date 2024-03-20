@@ -39,6 +39,7 @@
     <ProjectReference Include="..\LibraryManagement.API\LibraryManagement.API.csproj">
       <ServiceLaunchUrl>https://localhost:{ServicePort}/swagger</ServiceLaunchUrl>
     </ProjectReference>
+    <ProjectReference Include="..\LibraryManagement.AppuserActor\LibraryManagement.AppuserActor.csproj" />
     <ProjectReference Include="..\LibraryManagement.AppuserService\LibraryManagement.AppuserService.csproj" />
     <ProjectReference Include="..\LibraryManagement.AuthorService\LibraryManagement.AuthorService.csproj" />
     <ProjectReference Include="..\LibraryManagement.BookCatalog\LibraryManagement.BookCatalog.csproj" />

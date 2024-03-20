@@ -34,6 +34,7 @@ namespace LibraryManagement.API
                         var builder = WebApplication.CreateBuilder();
 
                         builder.Services.AddSingleton<StatelessServiceContext>(serviceContext);
+                        builder.Services.AddTransient<ExceptionMiddleware>();
                         builder.WebHost
                                     .UseKestrel(opt =>
                                     {
@@ -58,8 +59,8 @@ namespace LibraryManagement.API
                         app.UseSwaggerUI();
                         }
                         app.UseHttpsRedirection();
-                        app.UseMiddleware<ExceptionMiddleware>();
                         app.UseAuthorization();
+                        app.UseMiddleware<ExceptionMiddleware>();
                         app.MapControllers();
                         
                         return app;

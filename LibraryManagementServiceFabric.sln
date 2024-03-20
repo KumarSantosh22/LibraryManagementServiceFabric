@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.AppuserSe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.BookTransactionService", "LibraryManagement.BookTransactionService\LibraryManagement.BookTransactionService.csproj", "{7AD1DDED-3A32-44ED-9730-77C4AC4DFFF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Interfaces", "LibraryManagement.Interfaces\LibraryManagement.Interfaces.csproj", "{B600B81A-E70C-4614-81D5-F1DC277028C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.Interfaces", "LibraryManagement.Interfaces\LibraryManagement.Interfaces.csproj", "{B600B81A-E70C-4614-81D5-F1DC277028C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.AppuserActor", "LibraryManagement.AppuserActor\LibraryManagement.AppuserActor.csproj", "{326F29C7-60F6-4BA5-94B5-BBBCB0282B20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.AppuserActor.Interfaces", "LibraryManagement.AppuserActor.Interfaces\LibraryManagement.AppuserActor.Interfaces.csproj", "{48F412F1-8564-4E46-8105-61183EE49421}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,22 @@ Global
 		{B600B81A-E70C-4614-81D5-F1DC277028C3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B600B81A-E70C-4614-81D5-F1DC277028C3}.Release|x64.ActiveCfg = Release|Any CPU
 		{B600B81A-E70C-4614-81D5-F1DC277028C3}.Release|x64.Build.0 = Release|Any CPU
+		{326F29C7-60F6-4BA5-94B5-BBBCB0282B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326F29C7-60F6-4BA5-94B5-BBBCB0282B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326F29C7-60F6-4BA5-94B5-BBBCB0282B20}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{326F29C7-60F6-4BA5-94B5-BBBCB0282B20}.Debug|x64.Build.0 = Debug|Any CPU
+		{326F29C7-60F6-4BA5-94B5-BBBCB0282B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326F29C7-60F6-4BA5-94B5-BBBCB0282B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{326F29C7-60F6-4BA5-94B5-BBBCB0282B20}.Release|x64.ActiveCfg = Release|Any CPU
+		{326F29C7-60F6-4BA5-94B5-BBBCB0282B20}.Release|x64.Build.0 = Release|Any CPU
+		{48F412F1-8564-4E46-8105-61183EE49421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F412F1-8564-4E46-8105-61183EE49421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F412F1-8564-4E46-8105-61183EE49421}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{48F412F1-8564-4E46-8105-61183EE49421}.Debug|x64.Build.0 = Debug|Any CPU
+		{48F412F1-8564-4E46-8105-61183EE49421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F412F1-8564-4E46-8105-61183EE49421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48F412F1-8564-4E46-8105-61183EE49421}.Release|x64.ActiveCfg = Release|Any CPU
+		{48F412F1-8564-4E46-8105-61183EE49421}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

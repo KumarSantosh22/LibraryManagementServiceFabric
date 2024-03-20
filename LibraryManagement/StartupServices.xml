@@ -17,6 +17,9 @@
     <Parameter Name="LibraryManagement.BookCatalog_MinReplicaSetSize" DefaultValue="3" />
     <Parameter Name="LibraryManagement.BookCatalog_PartitionCount" DefaultValue="1" />
     <Parameter Name="LibraryManagement.BookCatalog_TargetReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="AppuserActorService_PartitionCount" DefaultValue="10" />
+    <Parameter Name="AppuserActorService_MinReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="AppuserActorService_TargetReplicaSetSize" DefaultValue="3" />
   </Parameters>
   <Services>
     <!-- The section below creates instances of service types, when an instance of this 
@@ -52,6 +55,11 @@
     <Service Name="LibraryManagement.BookCatalog" ServicePackageActivationMode="ExclusiveProcess">
       <StatefulService ServiceTypeName="LibraryManagement.BookCatalogType" TargetReplicaSetSize="[LibraryManagement.BookCatalog_TargetReplicaSetSize]" MinReplicaSetSize="[LibraryManagement.BookCatalog_MinReplicaSetSize]">
         <UniformInt64Partition PartitionCount="[LibraryManagement.BookCatalog_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+      </StatefulService>
+    </Service>
+    <Service Name="AppuserActorService" GeneratedIdRef="f9ad972f-3bbd-49df-bbdd-b86292e070f6|Persisted">
+      <StatefulService ServiceTypeName="AppuserActorServiceType" TargetReplicaSetSize="[AppuserActorService_TargetReplicaSetSize]" MinReplicaSetSize="[AppuserActorService_MinReplicaSetSize]">
+        <UniformInt64Partition PartitionCount="[AppuserActorService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
       </StatefulService>
     </Service>
   </Services>

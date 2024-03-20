@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LibraryManagement.AppuserActor.Interfaces\LibraryManagement.AppuserActor.Interfaces.csproj" />
     <ProjectReference Include="..\LibraryManagement.Interfaces\LibraryManagement.Interfaces.csproj" />
   </ItemGroup>
 
