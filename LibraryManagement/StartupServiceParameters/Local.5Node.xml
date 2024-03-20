@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StartupServices xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="LibraryManagement.BookTransactionService_PartitionCount" Value="1" />
+    <Parameter Name="LibraryManagement.BookTransactionService_MinReplicaSetSize" Value="3" />
+    <Parameter Name="LibraryManagement.BookTransactionService_TargetReplicaSetSize" Value="3" />
+    <Parameter Name="LibraryManagement.AppuserService_PartitionCount" Value="1" />
+    <Parameter Name="LibraryManagement.AppuserService_MinReplicaSetSize" Value="3" />
+    <Parameter Name="LibraryManagement.AppuserService_TargetReplicaSetSize" Value="3" />
+    <Parameter Name="LibraryManagement.PublisherService_PartitionCount" Value="1" />
+    <Parameter Name="LibraryManagement.PublisherService_MinReplicaSetSize" Value="3" />
+    <Parameter Name="LibraryManagement.PublisherService_TargetReplicaSetSize" Value="3" />
+    <Parameter Name="LibraryManagement.AuthorService_PartitionCount" Value="1" />
+    <Parameter Name="LibraryManagement.AuthorService_MinReplicaSetSize" Value="3" />
+    <Parameter Name="LibraryManagement.AuthorService_TargetReplicaSetSize" Value="3" />
+    <Parameter Name="LibraryManagement.API_InstanceCount" Value="1" />
+    <Parameter Name="LibraryManagement.BookCatalog_PartitionCount" Value="1" />
+    <Parameter Name="LibraryManagement.BookCatalog_MinReplicaSetSize" Value="3" />
+    <Parameter Name="LibraryManagement.BookCatalog_TargetReplicaSetSize" Value="3" />
+  </Parameters>
+</StartupServices>
