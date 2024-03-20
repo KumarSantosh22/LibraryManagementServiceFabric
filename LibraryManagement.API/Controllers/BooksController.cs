@@ -19,7 +19,7 @@ namespace LibraryManagement.API.Controllers
                 context => new FabricTransportServiceRemotingClientFactory());
 
             _bookService = proxyFactory.CreateServiceProxy<IBookService>(
-                new Uri("fabric:/LibraryManagement/LibraryManagement.BookService"),
+                new Uri("fabric:/LibraryManagement/LibraryManagement.BookCatalog"),
                 new ServicePartitionKey(0));
         }
 
