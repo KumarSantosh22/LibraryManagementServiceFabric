@@ -1,6 +1,7 @@
 using System.Fabric;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
+using LibraryManagement.API.Utilities;
 using Microsoft.ServiceFabric.Services.Communication.AspNetCore;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Runtime;
@@ -57,6 +58,7 @@ namespace LibraryManagement.API
                         app.UseSwaggerUI();
                         }
                         app.UseHttpsRedirection();
+                        app.UseMiddleware<ExceptionMiddleware>();
                         app.UseAuthorization();
                         app.MapControllers();
                         
